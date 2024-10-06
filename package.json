@@ -4,7 +4,7 @@
   "scripts": {
     "build": "bun run build:popup",
     "dev": "bun run build:popup -- --watch",
-    "build:popup": "bun build lib/popup.ts --outfile public/popup/popup.js"
+    "build:popup": "bun build lib/popup.ts --outfile public/popup.js"
   },
   "dependencies": {
     "crunker": "^2.4.0",
