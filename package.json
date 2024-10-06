@@ -1,0 +1,22 @@
+{
+  "name": "generate-audio-extension",
+  "type": "module",
+  "scripts": {
+    "build": "bun run build:popup",
+    "dev": "bun run build:popup -- --watch",
+    "build:popup": "bun build lib/popup.ts --outfile public/popup/popup.js"
+  },
+  "dependencies": {
+    "crunker": "^2.4.0",
+    "openai": "^4.67.1"
+  },
+  "devDependencies": {
+    "@types/bun": "latest",
+    "@types/chrome": "^0.0.269",
+    "@types/mozilla-readability": "^0.2.1",
+    "prettier": "^3.3.3"
+  },
+  "peerDependencies": {
+    "typescript": "^5.0.0"
+  }
+}
