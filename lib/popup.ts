@@ -85,6 +85,9 @@ chrome.tabs.query({ active: true, currentWindow: true }, async (tabs) => {
     chunk += word + " ";
     accum += word.length + 1;
   }
+  if (chunk.trim()) {
+    mergedTextChunks.push(chunk);
+  }
 
   const cost = (textContent.length * 15) / 1000000;
   const generateStr = `Generate audio ($${cost.toFixed(2)})`;
